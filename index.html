@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <meta charset="UTF-8" />
+    <title>Bataille navale</title>
+    <style>
+        .caseBataille {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+            background-color: white;
+        }
+        
+        .game {
+            width: 90%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            text-align: center;
+        }
+        .vert {
+            background-color: #00ff00;
+        }
+        
+        
+    </style>
+    <script>
+        function changeClasse(td, couleur) {
+            td.className = couleur;
+        }
+    </script>
+</head>
+<body>
+    <section class="game"> 
+    <table id="plateau" border=" 1 ">
+        <tr>
+            <td></td>
+            <td class="caseBataille">A</td>
+            <td class="caseBataille">B</td>
+            <td class=" caseBataille">C</td>
+            <td class="caseBataille">D</td>
+            <td class="caseBataille">E</td>
+            <td class="caseBataille">F</td>
+            <td class="caseBataille">G</td>
+            <td class="caseBataille">H</td>
+            <td class="caseBataille">I</td>
+            <td class="caseBataille">J</td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">1</td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="A1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="B1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="C1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="D1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="E1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="F1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="G1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="H1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="I1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="J1 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">2</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J2 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">3</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J3 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">4</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J4 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">5</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J5 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">6</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J6 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">7</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J7 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">8</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J8 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">9</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J9 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">10</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J10 "></td>
+        </tr>
+    </table>
+        <table id="plateau" border=" 1 ">
+        <tr>
+            <td></td>
+            <td class="caseBataille">A</td>
+            <td class="caseBataille">B</td>
+            <td class=" caseBataille">C</td>
+            <td class="caseBataille">D</td>
+            <td class="caseBataille">E</td>
+            <td class="caseBataille">F</td>
+            <td class="caseBataille">G</td>
+            <td class="caseBataille">H</td>
+            <td class="caseBataille">I</td>
+            <td class="caseBataille">J</td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">1</td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="A1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="B1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="C1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="D1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="E1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="F1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="G1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="H1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="I1 "></td>
+            <td class="caseBataille" onclick="changeClasse(this, 'vert');" id="J1 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">2</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I2 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J2 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">3</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I3 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J3 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">4</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I4 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J4 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">5</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I5 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J5 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">6</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I6 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J6 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">7</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I7 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J7 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">8</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I8 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J8 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">9</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I9 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J9 "></td>
+        </tr>
+        <tr>
+            <td class="caseBataille ">10</td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="A10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="B10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="C10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="D10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="E10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="F10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="G10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="H10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="I10 "></td>
+            <td class="caseBataille " onclick="changeClasse(this, 'vert');" id="J10 "></td>
+        </tr>
+    </table>
+    </section>
+</body>
+</html>
